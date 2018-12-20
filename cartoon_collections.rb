@@ -14,7 +14,9 @@ def summon_captain_planet(collection)
 end
 
 def long_planeteer_calls(collection)
-  # Your code here
+  if collection.any?(|item| item.length > 4)
+    true
+  elsif collection.
 end
 
 def find_the_cheese# code an argument here
