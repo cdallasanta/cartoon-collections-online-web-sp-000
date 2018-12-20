@@ -7,11 +7,11 @@ def roll_call_dwarves(dwarves)# code an argument here
 end
 
 def summon_captain_planet(collection)
-  collection.map do |item|
+  answer = collection.map! do |item|
     item << "!"
-    item = item.capitalize
+    item.capitalize
   end
-  collection
+  answer
 end
 
 def long_planeteer_calls# code an argument here
@@ -23,4 +23,5 @@ def find_the_cheese# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
 end
 
-puts "apple".capitalize
+list = ["cheddar", "gouda", "camembert"]
+puts summon_captain_planet(list)
