@@ -15,9 +15,9 @@ end
 
 def long_planeteer_calls(collection)
   if collection.any?{|item| item.length > 4}
-    return true
-  elsif collection.all?{|item| item.length < 4}
-    return false
+    true
+  else
+    false
   end
 end
 
