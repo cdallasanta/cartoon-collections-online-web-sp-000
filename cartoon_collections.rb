@@ -18,7 +18,7 @@ def long_planeteer_calls(collection)
     return true
   elsif collection.all?(|item| item.length < 4)
     return false
-    
+  end
 end
 
 def find_the_cheese# code an argument here
