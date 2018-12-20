@@ -14,9 +14,9 @@ def summon_captain_planet(collection)
 end
 
 def long_planeteer_calls(collection)
-  if collection.any?(|item| item.length > 4)
+  if collection.any?{|item| item.length > 4}
     return true
-  elsif collection.all?(|item| item.length < 4)
+  elsif collection.all?{|item| item.length < 4}
     return false
   end
 end
