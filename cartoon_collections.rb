@@ -15,8 +15,10 @@ end
 
 def long_planeteer_calls(collection)
   if collection.any?(|item| item.length > 4)
-    true
-  elsif collection.
+    return true
+  elsif collection.all?(|item| item.length < 4)
+    return false
+    
 end
 
 def find_the_cheese# code an argument here
