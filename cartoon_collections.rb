@@ -25,10 +25,6 @@ def find_the_cheese(ingredients)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   ingredients.find do |item|
-    i = 0
-    while i<cheese_types.length
-      return true if item == cheese_types[i]
-      i += 1
-    end
+    cheese_types.any?(item)
   end
 end
