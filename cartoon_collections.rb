@@ -28,6 +28,7 @@ def find_the_cheese(ingredients)
     i = 0
     while i<cheese_types.length
       return true if item == cheese_types[i]
+      i += 1
     end
   end
 end
